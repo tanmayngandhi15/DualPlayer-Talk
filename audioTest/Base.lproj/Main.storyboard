@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="audioTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPc-is-0vG">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DualPlayer &amp; Talk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMU-H0-Ect">
+                                        <rect key="frame" x="16" y="18" width="368" height="63"/>
+                                        <color key="backgroundColor" red="0.65019631302188374" green="0.66840064869206728" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="23t-x0-GUs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fp9-am-FmO">
+                                        <rect key="frame" x="17" y="109.99999999999997" width="356" height="326.33333333333326"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" text="My name is Tanmay N. Gandhi &amp; I am an iOS developer." translatesAutoresizingMaskIntoConstraints="NO" id="EOk-kl-ofJ">
+                                                <rect key="frame" x="8" y="8" width="340" height="310.33333333333331"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="EOk-kl-ofJ" secondAttribute="bottom" constant="8" id="SDQ-4V-iFY"/>
+                                            <constraint firstItem="EOk-kl-ofJ" firstAttribute="top" secondItem="Fp9-am-FmO" secondAttribute="top" constant="8" id="h89-Yc-FJ5"/>
+                                            <constraint firstAttribute="trailing" secondItem="EOk-kl-ofJ" secondAttribute="trailing" constant="8" id="udR-fB-zg2"/>
+                                            <constraint firstItem="EOk-kl-ofJ" firstAttribute="leading" secondItem="Fp9-am-FmO" secondAttribute="leading" constant="8" id="vwV-3x-Uks"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcE-gc-SFL">
+                                        <rect key="frame" x="163" y="472.33333333333337" width="75" height="33"/>
+                                        <color key="backgroundColor" red="1" green="0.67384899318832991" blue="0.17300245662958791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Speak">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_speak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgv-fq-WNy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kte-8b-9y5">
+                                        <rect key="frame" x="153" y="583" width="95" height="30"/>
+                                        <color key="backgroundColor" red="0.63254105865458143" green="1" blue="0.63037772379467083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Play Song">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btn_song:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2P-cL-bPJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80610470042215776" green="0.8503440354749694" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="NMU-H0-Ect" firstAttribute="top" secondItem="LPc-is-0vG" secondAttribute="top" constant="18" id="2JB-1C-Ch9"/>
+                                    <constraint firstItem="kte-8b-9y5" firstAttribute="top" secondItem="LcE-gc-SFL" secondAttribute="bottom" constant="77.666666666666629" id="4wP-Xd-Zrd"/>
+                                    <constraint firstItem="Fp9-am-FmO" firstAttribute="leading" secondItem="LPc-is-0vG" secondAttribute="leading" constant="17" id="5Uo-wU-1SU"/>
+                                    <constraint firstAttribute="bottom" secondItem="kte-8b-9y5" secondAttribute="bottom" constant="146" id="6Mc-sd-VJT"/>
+                                    <constraint firstItem="LcE-gc-SFL" firstAttribute="leading" secondItem="LPc-is-0vG" secondAttribute="leading" constant="163" id="EwP-Xd-gCq"/>
+                                    <constraint firstAttribute="trailing" secondItem="NMU-H0-Ect" secondAttribute="trailing" constant="9" id="HN2-xN-2fZ"/>
+                                    <constraint firstItem="LcE-gc-SFL" firstAttribute="top" secondItem="Fp9-am-FmO" secondAttribute="bottom" constant="36.000000000000114" id="IpE-mQ-bJc"/>
+                                    <constraint firstItem="NMU-H0-Ect" firstAttribute="leading" secondItem="LPc-is-0vG" secondAttribute="leading" constant="16" id="Oei-Vv-eqX"/>
+                                    <constraint firstAttribute="trailing" secondItem="kte-8b-9y5" secondAttribute="trailing" constant="145" id="Qnm-Sf-Hfm"/>
+                                    <constraint firstAttribute="trailing" secondItem="LcE-gc-SFL" secondAttribute="trailing" constant="155" id="W1g-oQ-WWw"/>
+                                    <constraint firstItem="kte-8b-9y5" firstAttribute="leading" secondItem="LPc-is-0vG" secondAttribute="leading" constant="153" id="dsl-zF-wmb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fp9-am-FmO" secondAttribute="trailing" constant="20" symbolic="YES" id="vZv-bx-yAX"/>
+                                    <constraint firstItem="Fp9-am-FmO" firstAttribute="top" secondItem="NMU-H0-Ect" secondAttribute="bottom" constant="29" id="wYy-pR-eIm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LPc-is-0vG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2wH-vM-tMN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LPc-is-0vG" secondAttribute="trailing" id="QlB-Wc-BqA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LPc-is-0vG" secondAttribute="bottom" id="Ya8-hc-Rug"/>
+                            <constraint firstItem="LPc-is-0vG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZZR-mi-NJ5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_Song" destination="kte-8b-9y5" id="6u1-ce-ouZ"/>
+                        <outlet property="btn_Speak" destination="LcE-gc-SFL" id="LL4-kK-HTZ"/>
+                        <outlet property="txt_Data" destination="EOk-kl-ofJ" id="WOd-Qb-qRs"/>
+                        <outlet property="vw_frame" destination="Fp9-am-FmO" id="NPk-kf-N06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92.36641221374046" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
